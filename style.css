@@ -1,14 +1,21 @@
 
+*{
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+   
+}
 
 /* header nav style */
 header{
     
-    background: rgba(255, 144, 14, 0.1);
+   background-color: rgba(255, 144, 14, 0.1);; 
+    width: 100%;
+    height: 100%;
 }
 nav{
     display: flex;
     justify-content: space-between;
-    margin: 50px 228px;
+    padding: 50px 228px;
     align-items: center;
 
 }
@@ -22,51 +29,200 @@ ul li{
     font-weight: 500;
     margin-left: 60px;
 }
-.banner{
- margin: 0 auto;
- margin-bottom: 50px;
-}
+
 
 .banner-text{
     text-align: center;
 }
     
-.ak img{
-    text-align: center;
-}
+
 /* Quick list of Our Features */
-.Features-list .img-4 img{
-    
-}
-.paki{
+ .Features-text h2{
+    font-weight: 600;
+    font-size: 45px;
+    margin-bottom: 23px;
+ }
+ .Features-text p{
+    font-weight: 300;
+    font-size: 20px;
+ }
+ 
+  span{
+    color: #FF900E;
+  }  
+
+.Features-team{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 21px;
-    height: calc(50%-5px/2);
+    
 }
+.button-banner{
+    font-weight: 600;
+    font-size: 20px;
+    background: #FF900E;
+    border-radius: 8px;
+    width: 180px;
+    height: 64px;
+    color: aliceblue;
+    margin-top: 25px;
+    margin-bottom: 40px;
+    border: none;}
+    
 .Features-list{
     display: flex;
     align-items: center;
     gap: 73px;
+    margin:0 300px;
+    margin-top: 85px;
+    
 }
 /* Features you will love & enjoy  */
+.border h2{
+    border-left: 5px solid  #FF900E;;;
+    
+}
 .will-love{
     display: flex;
-    gap:54px ;
+    margin: 200px;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 137px;
+    margin-bottom: 94px;
+   
+   
 }
+.articie-text h4{
+ 
+    font-size: 25px;
+    margin-bottom: 15px; 
+}
+
 .articie-text{
     box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
     border-radius: 8px;
     padding: 30px 33px;
 }
-.aa{
+.button-banner-love{
     background-color: orange;
     height: 80px;
-    width: 100px;
-    padding: 44px 42px;
+    width: 120px;
+    border: none;
     border-radius: 8px;
     position: relative;
     top: -80px;
     color: aliceblue;
 
 }
+/* Some Facts */
+.some-text{
+    margin: 0 230px;
+   
+
+}
+.some-text h2{
+    font-weight: 700;
+    font-size: 45px;
+}
+.some-text p{
+    font-weight: 400;
+    font-size: 25px;
+    margin-top: 50px;
+
+}
+/* Some Facts customers...  */
+
+.facts-customers{
+    margin-top: 90px;
+    display: flex;
+    gap: 124px;
+    margin: 290px;
+
+}
+.customers-style{
+    border: 1px solid #bd7d33;
+    border-radius: 8px;
+    padding: 45px 35px;
+    
+    transition-duration: 2s;
+    position: relative;
+} 
+.customers-style:hover{
+    background-color: antiquewhite;
+    top: -50px;
+}
+
+.customers-style h1{
+ font-weight: 600;
+ font-size: 45px;
+
+}
+.customers-style p{
+    font-weight: 600;
+    font-size: 20px;
+   
+}
+
+ /* Our Sponspors tag.... */
+ .Sponspors{
+    text-align: center;
+    margin-top: 240px;
+ }
+ .Sponspors p{
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 24px;
+  
+ }
+ .Sponspors h2{
+    font-weight: 700;
+    font-size: 45px;
+
+ }
+ /* Sponspors iconss */
+
+ .Sponspors-iconss{
+    margin-top: 50px;
+    margin-bottom: 45px;
+ }
+ 
+
+ .Sponspors-iconss img{
+    
+    margin: 30px;
+    align-items: center;
+ }
+ .Sponspors-iconss p{
+    background-color: bisque;
+    margin-top: 50px;
+    margin: 0 200px;
+    width: 1440px;
+   
+    border-radius: 4px;
+ }
+
+ /* responsive */
+@media screen and (max-width:576px){
+    ul, nav,.Features-list,.facts-customers{
+        flex-direction: column;
+   }
+ 
+}
+@media screen and (max-width:576px){
+    .Features-team{
+        grid-template-columns: repeat(1, 1fr);
+       }  
+       .Features-list,.facts-customers,.some-text{
+        margin:5px;
+     }
+}
+@media screen and (max-width:576px){
+    .will-love{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+ 
+
+
+ 
